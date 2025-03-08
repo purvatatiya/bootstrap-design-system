@@ -1,3 +1,15 @@
 body{
-    background-color: #856A74;
+    background-color: var(--highlight-color);
+    font-family: var(--primary-font);
+}
+
+:root{
+    --primary-color: #856A74;
+    --secondary-color: #B8C8D9 ;
+    --highlight-color: #F4C7A6;
+    --netural-color: #F08A5D ;
+    --text-color: #161515;
+    --blank: #eeeeee;
+    --primary-font: "Poppins", sans-serif;
+    --secondary-font: "Merriweather", serif; 
 }
