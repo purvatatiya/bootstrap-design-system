@@ -27,3 +27,19 @@ p.italics{
 .emphasized{ 
     font-weight:700;
 }
+
+.btn{
+    text-transform: lowercase;
+    font-family: var(--primary-font);
+}
+
+.btn-primary{
+    background-color: var(--netural-color);
+    border-color: var(--primary-color);
+
+}
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--netural-color);
+
+}
