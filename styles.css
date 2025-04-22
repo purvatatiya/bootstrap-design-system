@@ -45,4 +45,147 @@ h2 {
     border: none;
 }
 
-/* Gradient for*
+/* Gradient for Primary Button */
+.btn-primary {
+    background: linear-gradient(45deg, #FF6F61, #FF9B85); 
+    color: white;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #FF9B85, #FF6F61); 
+    color: white;
+}
+
+/* Gradient for Secondary Button */
+.btn-secondary {
+    background: linear-gradient(45deg, #FF9B85, #FF6F61); 
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(45deg, #FF6F61, #FF9B85); 
+    color: white;
+}
+
+/* Outline Buttons with Sunset gradient border */
+.btn-outline-primary {
+    color: #FF6F61;
+    border: 2px solid #FF6F61;
+    background: transparent;
+}
+
+.btn-outline-primary:hover {
+    background: #FF6F61;
+    color: white;
+    border: 2px solid #FF6F61;
+}
+
+/* Outline for Secondary Buttons */
+.btn-outline-secondary {
+    color: #FF9B85;
+    border: 2px solid #FF9B85;
+    background: transparent;
+}
+
+.btn-outline-secondary:hover {
+    background: #FF9B85;
+    color: white;
+    border: 2px solid #FF9B85;
+}
+
+.btn-outline-success {
+    color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745;
+    color: white;
+    border-color: #28a745;
+}
+
+.btn-outline-danger {
+    color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: white;
+    border-color: #dc3545;
+}
+
+.btn-outline-warning {
+    color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-outline-warning:hover {
+    background-color: #ffc107;
+    color: white;
+    border-color: #ffc107;
+}
+
+/* Slider */
+.carousel-item img {
+    object-fit: cover;
+    height: 500px; 
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.carousel-item img:hover {
+    filter: brightness(1); 
+}
+
+/* Emphasized Text */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+}
+
+h1.emphasized, h2.emphasized, h3.emphasized {
+    color: var(--neutral-color);
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--primary-font);
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+h3 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+h4 {
+    font-size: 1.8rem;
+    color: var(--neutral-color);
+}
+
+h5 {
+    font-size: 1.6rem;
+    color: var(--neutral-color);
+}
+
+h6 {
+    font-size: 1.4rem;
+    color: var(--neutral-color);
+}
+
+.container {
+    padding: 40px;
+    background-color: var(--blank);
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
