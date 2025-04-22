@@ -6,17 +6,17 @@ body {
 }
 
 :root {
-    --primary-color: #FF6F61; /* Sunset orange */
-    --secondary-color: #FF9B85; /* Soft sunset pink */
-    --highlight-color: #F8D7B9; /* Light warm yellow */
-    --neutral-color: #F08080; /* Muted red-pink */
-    --text-color: #3E2723; /* Dark brown for better readability */
-    --blank: #F5E0D1; /* Light peach-beige */
+    --primary-color: #FF6F61; 
+    --secondary-color: #FF9B85; 
+    --highlight-color: #F8D7B9; 
+    --neutral-color: #F08080; 
+    --text-color: #3E2723; 
+    --blank: #F5E0D1; /
     --primary-font: "Poppins", sans-serif;
     --secondary-font: "Merriweather", serif;
 }
 
-/* Typography */
+
 p, a, li {
     font-family: var(--secondary-font);
     font-size: 1.1rem;
@@ -31,7 +31,7 @@ p.italics {
     font-weight: 700;
 }
 
-/* Reduce size of "by Purva Tatiya" text */
+
 h2 {
     font-size: 1.4rem;
     color: var(--text-color);
@@ -41,7 +41,7 @@ h2 {
 .btn {
     text-transform: lowercase;
     font-family: var(--primary-font);
-    border-radius: 4px; /* Slightly rounded buttons */
+    border-radius: 4px; 
     padding: 10px 20px;
     font-size: 1rem;
     border: none;
@@ -49,23 +49,23 @@ h2 {
 
 /* Gradient for Primary Button */
 .btn-primary {
-    background: linear-gradient(45deg, #FF6F61, #FF9B85); /* Sunset gradient */
+    background: linear-gradient(45deg, #FF6F61, #FF9B85); 
     color: white;
 }
 
 .btn-primary:hover {
-    background: linear-gradient(45deg, #FF9B85, #FF6F61); /* Reversed gradient on hover */
+    background: linear-gradient(45deg, #FF9B85, #FF6F61); 
     color: white;
 }
 
 /* Gradient for Secondary Button */
 .btn-secondary {
-    background: linear-gradient(45deg, #FF9B85, #FF6F61); /* Soft sunset pink to orange */
+    background: linear-gradient(45deg, #FF9B85, #FF6F61); 
     color: white;
 }
 
 .btn-secondary:hover {
-    background: linear-gradient(45deg, #FF6F61, #FF9B85); /* Reversed gradient on hover */
+    background: linear-gradient(45deg, #FF6F61, #FF9B85); 
     color: white;
 }
 
@@ -96,13 +96,18 @@ h2 {
 }
 
 /* Slider */
-.carousel-item img {
-    border-radius: 10px; /* Soft border for images */
-    filter: brightness(0.7); /* Dim the images for sunset-like effect */
+
+    .carousel-item img {
+        object-fit: cover;
+        height: 500px; 
+        width: 100%;
+        display: block;
+        border-radius: 10px;
+    }
 }
 
 .carousel-item img:hover {
-    filter: brightness(1); /* On hover, brighten images */
+    filter: brightness(1); 
 }
 
 /* Emphasized Text */
@@ -149,7 +154,7 @@ h6 {
     color: var(--neutral-color);
 }
 
-/* General Layout */
+
 .container {
     padding: 40px;
     background-color: var(--blank);
