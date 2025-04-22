@@ -31,56 +31,68 @@ p.italics {
     font-weight: 700;
 }
 
-/* Button Styles */
+/* Reduce size of "by Purva Tatiya" text */
+h2 {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+/* Button Styles with Gradient */
 .btn {
     text-transform: lowercase;
     font-family: var(--primary-font);
     border-radius: 4px; /* Slightly rounded buttons */
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
 }
 
-/* Primary Button */
+/* Gradient for Primary Button */
 .btn-primary {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
+    background: linear-gradient(45deg, #FF6F61, #FF9B85); /* Sunset gradient */
+    color: white;
 }
 
 .btn-primary:hover {
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
+    background: linear-gradient(45deg, #FF9B85, #FF6F61); /* Reversed gradient on hover */
+    color: white;
 }
 
-/* Secondary Button */
+/* Gradient for Secondary Button */
 .btn-secondary {
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
+    background: linear-gradient(45deg, #FF9B85, #FF6F61); /* Soft sunset pink to orange */
+    color: white;
 }
 
 .btn-secondary:hover {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
+    background: linear-gradient(45deg, #FF6F61, #FF9B85); /* Reversed gradient on hover */
+    color: white;
 }
 
-/* Outline Buttons */
+/* Outline Buttons with Sunset gradient border */
 .btn-outline-primary {
-    color: var(--primary-color);
-    border-color: var(--primary-color);
+    color: #FF6F61;
+    border: 2px solid #FF6F61;
+    background: transparent;
 }
 
 .btn-outline-primary:hover {
-    background-color: var(--primary-color);
+    background: #FF6F61;
     color: white;
-    border-color: var(--primary-color);
+    border: 2px solid #FF6F61;
 }
 
+/* Outline for Secondary Buttons */
 .btn-outline-secondary {
-    color: var(--secondary-color);
-    border-color: var(--secondary-color);
+    color: #FF9B85;
+    border: 2px solid #FF9B85;
+    background: transparent;
 }
 
 .btn-outline-secondary:hover {
-    background-color: var(--secondary-color);
+    background: #FF9B85;
     color: white;
-    border-color: var(--secondary-color);
+    border: 2px solid #FF9B85;
 }
 
 /* Slider */
