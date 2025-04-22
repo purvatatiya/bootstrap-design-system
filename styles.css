@@ -93,9 +93,10 @@ h2 {
     border: 2px solid #FF9B85;
 }
 
-.btn-outline-success {
+.btn-outline-success { 
     color: #28a745;
     border-color: #28a745;
+    border: 2px solid #28a745;
 }
 
 .btn-outline-success:hover {
@@ -107,6 +108,7 @@ h2 {
 .btn-outline-danger {
     color: #dc3545;
     border-color: #dc3545;
+    border: 2px solid #dc3545;
 }
 
 .btn-outline-danger:hover {
@@ -118,6 +120,7 @@ h2 {
 .btn-outline-warning {
     color: #ffc107;
     border-color: #ffc107;
+    border: 2px solid #ffc107;
 }
 
 .btn-outline-warning:hover {
