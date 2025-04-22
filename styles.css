@@ -1,46 +1,146 @@
-body{
+body {
     background-color: var(--highlight-color);
     font-family: var(--primary-font);
     font-size: 16px;
+    color: var(--text-color);
 }
 
-:root{
-    --primary-color: #856A74;
-    --secondary-color: #B8C8D9 ;
-    --highlight-color: #F4C7A6;
-    --netural-color: #F08A5D ;
-    --text-color: #161515;
-    --blank: #eeeeee;
+:root {
+    --primary-color: #FF6F61; /* Sunset orange */
+    --secondary-color: #FF9B85; /* Soft sunset pink */
+    --highlight-color: #F8D7B9; /* Light warm yellow */
+    --neutral-color: #F08080; /* Muted red-pink */
+    --text-color: #3E2723; /* Dark brown for better readability */
+    --blank: #F5E0D1; /* Light peach-beige */
     --primary-font: "Poppins", sans-serif;
-    --secondary-font: "Merriweather", serif; 
+    --secondary-font: "Merriweather", serif;
 }
 
+/* Typography */
 p, a, li {
     font-family: var(--secondary-font);
-    font-size: 1.1rem;   
-
+    font-size: 1.1rem;
+    color: var(--text-color);
 }
-p.italics{
+
+p.italics {
     font-style: italic;
 }
 
-.emphasized{ 
-    font-weight:700;
+.emphasized {
+    font-weight: 700;
 }
 
-.btn{
+/* Button Styles */
+.btn {
     text-transform: lowercase;
+    font-family: var(--primary-font);
+    border-radius: 4px; /* Slightly rounded buttons */
+}
+
+/* Primary Button */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* Secondary Button */
+.btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Outline Buttons */
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.btn-outline-secondary {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    border-color: var(--secondary-color);
+}
+
+/* Slider */
+.carousel-item img {
+    border-radius: 10px; /* Soft border for images */
+    filter: brightness(0.7); /* Dim the images for sunset-like effect */
+}
+
+.carousel-item img:hover {
+    filter: brightness(1); /* On hover, brighten images */
+}
+
+/* Emphasized Text */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+}
+
+h1.emphasized, h2.emphasized, h3.emphasized {
+    color: var(--neutral-color);
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--primary-font);
 }
 
-.btn-primary{
-    background-color: var(--netural-color);
-    border-color: var(--primary-color);
-
-}
-.btn-primary:hover {
-    background-color: var(--primary-color);
-    border-color: var(--netural-color);
-
+h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
 }
 
+h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+h3 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+h4 {
+    font-size: 1.8rem;
+    color: var(--neutral-color);
+}
+
+h5 {
+    font-size: 1.6rem;
+    color: var(--neutral-color);
+}
+
+h6 {
+    font-size: 1.4rem;
+    color: var(--neutral-color);
+}
+
+/* General Layout */
+.container {
+    padding: 40px;
+    background-color: var(--blank);
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
